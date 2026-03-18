@@ -1,0 +1,195 @@
+### HTML: linguagem de Marcação de Hipertexto ###
+ 
+ - Esqueleto do site.
+ - Define o significado e a estrutura do conteúdo da web. 
+ - Reponsável por textos, imagens, etc
+ - Formato do arquivo: ".html" ou ".htm" sendo mais utilizado o ".html".
+_______________________________________________________________________________________________________
+
+        **Hipertexto/hiperlink** - refere-se aos links que conectam as páginas.
+
+        **Linguagem de Marcação** - o html trabalha com tags, ou seja rótulos.
+            - A tag é formada pelos seguintes elementos: < > </>. Onde as chaves iniciais representam
+            abertura, e as chaves com barras indica fechamento
+            - ex¹: <title> Meu Titulo </title>. Essa tag indica o título do site, que vai aparecer 
+            na aba do navergador.
+
+            ***Tipos de tag***
+                - Imagem: <img>
+                - Legenda de imagem: <figure></figure>
+                    ela recebe uma tag dentro dela que permite adicionar a Legenda 
+                        ex¹: <figcaption>Figura 1: exemplo de tag</figcaption>
+                - Vídeo: <video>
+                - Áudio: <audio>
+                - Lista desordenada <ul>
+                - Lista Item: <li>
+                    ex² Listas:
+                        <ul>
+                            <li>Arroz</li>              Resultado =>    - Arroz
+                            <li>Feijão</li>                             - Feijão
+                            <li>Macarrão</li>                           - Macarrão
+                        </ul>
+_______________________________________________________________________________________________________
+
+        **Estrutura da página HTML**
+            - tag¹ <!DOCTYPE>: indica ao meu navegador que o mei documento é do tipo HTML
+            - tag² <html></html>: tag onde coloco todo conteúdo html.
+            - tag³ <head></head>: significa cabeça. É o cabeçalho, tudo que é colocado 
+            dentro dessa tag não émostrado ao usuário. Só vai ser lido pelo navegador, 
+            pelo programa está lendo meu site.
+            - tag <title></title>: tag onde eu coloco o título do site que aparece na 
+            barra de navegação
+
+            ***TAG meta / meta tag***
+        
+            - tag meta: as metas tags, são meta dados, são informações lidas somente pelo navegador. 
+            Servem como mecanismo de busca, como: saber as palavras chaves do seu site, para dizer quem 
+            é o autor, o tipo de codificação de caracteres, tipo de vizualização de dispositivos, entre outras.
+                - tag <meta charset="UTF-8"> : (Padrão da Web mais moderna)serve para definir que os tipos de 
+                caracter que é utilizado no site é do tipo 'UTF-8', ou seja, padronizção de caracteres. Quando a 
+                gente informa essa tag, não temos problemas com acentuação.
+                - tag <meta http-equiv="X-UA-Compatible" content="IE-edge"> : utiliza para compatiblidade com o 
+                navegador Internet Explorer mais recente.
+                - tag <meta name="viewport" content="width=device-width, initial-scale=1.0"> : 'viewport' é a área 
+                visualização da tela para o usuário. Quando colocamos essa meta tag dizemos que a tela vai se adaptar ao 
+                dispositivo da pessoa.Resumindo, essa tag é essencial para que o nosso site se adpate a diferentes 
+                dispositivos.
+                - tag <meta name="description" content="Esse é o meu primeiro site"> : essa tag é uma descrição do 
+                site, quando colocamos essa tag, ao enviar o url da página essa tag permite que o usuário vizualise 
+                uma pequena sinopse do que se trata o site.
+                - tag <meta name="keywords" content="aqui adiciona a palavras chaves"> : indica as palavras chaves do 
+                site, que dão uma ideia para os mecanismos de pesquisa sobre do que o site se trata.
+                - tag <meta name="author" content="Natália Fernandes"> : indica quem é o autor do site.
+           
+             ***ATRIBUTOS DA META TAG***
+            - Lang: Indica o idioma do site. Ele fica dentro da tag <html>
+            - charset: Indica o padrão de caracteres. Utilizado na tag meta.
+            - http-equiv: Indica a compatiblidade do navegador.
+
+
+
+            ***Tag que pertence ao corpo da página - Conteúdo visível para o usuário***
+            
+            - tag <body></body>: corpo do site. Dentro dessa tag é colocado o conteúdo
+            que irá aparecer ao usuário
+           
+            ***Tag de Cabeçalho / tag header: do H1 ao H6***
+            
+            São ordens de relevância dentro do texto que você adicionar no html.
+            NUNCA USAMOS TÍTULOS POR CAUSA DO TAMANHO DA LETRA, OU PARA FICAR EM NEGRITO. TÍTULOS SERVE, PARA MOSTAR AO
+            NAVEGADOR A IMPORTÂNCIA DO TEXTO QUE ESTOU FAZENDO.
+            
+            - <h1></h1>: Título principal
+            - <h2></h2>: Subtitulo
+            - <h3></h3>: Lista de itens referentes ao subtitulo
+            - <h4></h4>: Lista de itens menor que as listas do <h3>
+            - <h5></h5>:  Lista de itens menor que as listas do <h4>
+            - <h6></h6>:  Lista de itens menor que as listas do <h5>.
+           
+            ***Tag parágrafo***
+
+            - <p></p>: indica parágrafo.
+                ¨¨¨¨ Variações de utilização da tag <p> ¨¨¨¨
+                variação¹: caso queira digitar um texto automático como teste, digite o comando: p>lorem e clique Enter, 
+                irá gerar um parágrafo automático em um idioma variadp, apenas para testar no layout da página.
+
+_______________________________________________________________________________________________________
+
+        **Formatação de Texto**
+            - Negrito: podemos utilizar tags como:
+                ex¹: <b></b> - significa bold em inglês
+                ex²: <strong> - significa forte. Dá sentido de ênfase.
+            Esteticamente falando, possuem a mesma finalidade. No entanto sua diferenca encontra-se no nível de relevância que 
+            o navegador entende sobre ambas. Strong indica que é uma informsção importante(ex: preciso acordar cedo), 
+            já a b(bold) indica apenas que determinada parte do texto fique em negrito(ex: HTML - seria apenas o destaque de um 
+            nome importante, não necessarimente um alerta de informação).
+
+            - Destaque na frase:
+                ex¹ Tag: <em></em>
+            
+            - Abreviação de palavras:
+                ex¹ Tag: <abbr></abbr>
+                quando houver abreviação/siglas no parágrafo, ao adicionarmos essa tag a palavra será grifada, permitindo ao usuário clicar em cima da abreviação/sigla onde aparecerá a informação do significado da sigla.
+
+            - Linhas de divisão: 
+                ex¹ Tag: <hr>
+                separa em seções. Adiciona uma linha visualmente que divide partes do texto.
+
+            - Quebra de Linha: Pula linhas
+                ex¹ Tag <br>
+                Pula linhas do texto, se eu quero colocar uma determinada informação separada, pulo uma linha utilizando essa tag.
+                Caso eu queira pular mais linhas, basta adicionar mais tags.
+            
+            - Itálicos: deixa o texto em Itálico
+                ex¹ tag <i></i>
+
+            - Sublinhar / Uanderline: traça o uanderline na palavra que desejo grifar
+                ex¹ tag <u></u>
+
+            - Diminuir tamanho do texto:
+                ex! tag <small></small>
+            
+            - Risca a palavra: tipo deleta, mas visualmente traça uma linha para indicar que o texto foi deletado. O nome da tag é deletar mesmo, em inglês é delete.
+                ex¹ tag <del></del>
+
+            - Números exponenciais - Serve para palavras também, eleva independente do conteúdo que estiver dentro da tag.
+                ex¹ tag <sup></sup> ; eleva para cima, coloca o exponente em cima.
+                ex² tag <sub></sub>: faz o oposto, coloca o expoente em baico.
+            
+            - Marcar texto; Colori uma parte do texto em específico que julgar importante destacar.
+                ex¹ tag <mark></mark>
+
+            - Formulário:
+                ex¹ <for></form>
+                mais especificadamente, no projeto, utilizamos como forma de organização de página, definindo que dentro dele teremos elementos para finalidades especifica. Cria uma espécie de caixa para dividir determinadas informações.
+       
+        **INPUT** (atributos como: name, id, são variáveis, ou seja, não tem valor específico, é alterável às informações que for exibir em cada site)
+            - Input do tipo Rádio:
+                ex¹: <input type="radio">
+                cria o famoso botão de rádio, onde selecionamos determinada opção.
+
+            - Input do tipo Caixa de Texto / Campo de texto:
+                ex¹: <input type="text" id="p2" name="pergunta2" >
+                cria a caixa de texto onde o usuáriop consegue digitar.
+
+            - Input do tipo Data:
+                ex¹: <input type="date" >
+                cria uma espécie de calendário oculto. Visualmente ele apresentará um campo informando o formato data dd/mm/aaaa. Poderá alterar a data digitando. O campo apresenta uma opção na barra lateral que ao clicar no campo para selecionar a data, aparecerá um calendário onde o usuário poderá selecionar a data.
+            
+            - Input do tipo Upload:
+                ex¹: <input type="file">
+                esse tipo de input adiciona um botão que ao clicar nele o usuário navega diretamente ao explorador de arquivos e consegue anexar um arquivo no site.
+            
+            ***ATRIBUTOS DO INPUT***
+            - Texto indicativo dentro da caixa de texto:
+                ex¹: placeholder="Digite aqui"
+                é um atributo do input que fica visível ao usuário, indica o que o usuário deve fazer dentro da caixa de texte. Aparece como uma frase em um tom mais clarom e some a partir do momento que o usuário passa a digitar dentro da caixa de texto.
+
+            - Senha oculta:
+                ex¹: <input type="password">
+                cria uma caixa de texto que ao digitar um caracter ela oculta esse caracter. Muito utilizado em opções onde o usuário precisa digitar uma senha. Uma forma de segurança(visual).
+            
+            - Caixa de seleção:
+                ex¹: <input type="checkbox">
+
+
+
+
+        **BOTÂO**
+            - Legenda do botão:
+                ex¹:<label for="p1a">Phyton</label>
+            
+            - Menu Suspenso:
+                ex¹: <select name="pergunta7" id="p7">
+                        <option value="id">id</option>
+                        <option value="type">type</option>
+                        <option value="placeholder">placeholder</option>
+_______________________________________________________________________________________________________
+
+
+            PARAMOS NA AULA 04.
+            PRÓXIMA AULA A SER ASSITIDA: AULA 05
+          
+
+
+
