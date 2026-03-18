@@ -1,4 +1,4 @@
-Aqui está um **README.md** pronto, organizado e profissional para o seu projeto 👇
+
 
 ---
 
@@ -125,6 +125,5 @@ O quiz inclui perguntas como:
 * [ ] Sistema de pontuação dinâmica
 * [ ] Estilização com CSS
 * [ ] Responsividade avançada
-* [ ] Integração com backend
 
 ---
