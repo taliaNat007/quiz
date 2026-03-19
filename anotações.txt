@@ -202,11 +202,7 @@ ________________________________________________________________________________
 _______________________________________________________________________________________________________
 
 
-            PARAMOS NO CAPÍTULO DETAILS E SUMARY. A PARTIR DE 1:11:54
-
-            fALTA: FORMULÁRIOS EM HTML
-            FIELDSET E LEGEND 
-            E POR FINAL O FOOTER E DEMAIS CONTEÚDOS DO VÍDEO
+            Voltar na aula de CSS para realizar anotações
           
 
 
