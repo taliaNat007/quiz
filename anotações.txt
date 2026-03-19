@@ -29,6 +29,13 @@ ________________________________________________________________________________
                             <li>Feijão</li>                             - Feijão
                             <li>Macarrão</li>                           - Macarrão
                         </ul>
+                 ***TAGS QUE MELHORAM A LISTA***
+                - ex¹ <details></details> : oculta a parte da lista, em caso de gabarito de questões é
+                interessante, pois o usuário sóterá acesso ao clicar na opção onde abrirá a lista com
+                as respostas.
+                - ex² <summary></summary> : gera um texto indicativo, onde indica ao usuário o que ele 
+                encontrará na opção que está ocultada. 
+                    ex²: <summary>clique aqui para acessar as respostas</summary>
 _______________________________________________________________________________________________________
 
         **Estrutura da página HTML**
@@ -142,6 +149,14 @@ ________________________________________________________________________________
             - Formulário:
                 ex¹ <for></form>
                 mais especificadamente, no projeto, utilizamos como forma de organização de página, definindo que dentro dele teremos elementos para finalidades especifica. Cria uma espécie de caixa para dividir determinadas informações.
+            
+            ***TAGS QUE MELHORAM O FOMULÁRIO***
+                - <fildset></fildset> : cria um espaço que separa o formulário dos demais elementos da 
+                página. Visualmente essa tag cria uma caixa onde o formulário fica dentro dela.
+                - <legend><legend> : cria uma legenda para o formulário.
+                    ex¹: <legend>Informações de contato</legend>
+
+                
        
         **INPUT** (atributos como: name, id, são variáveis, ou seja, não tem valor específico, é alterável às informações que for exibir em cada site)
             - Input do tipo Rádio:
